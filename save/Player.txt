@@ -1,0 +1,5 @@
+Charmander 1 10 0 Api Es false
+Squirtle 1 10 0 Air Api false
+Pidgeot 1 10 0 Angin Tanah false
+Pogo 1 10 0 Es Angin false
+Swayworm 1 10 0 Tanah Air false

@@ -1,0 +1,5 @@
+Charmander 2 20 13 Api Es true
+Squirtle 1 10 4 Tanah Air true
+Pidgeot 1 10 16 Angin Tanah false
+Pogo 1 10 0 Es Angin false
+Swayworm 1 10 0 Es Angin true
