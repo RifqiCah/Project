@@ -1,0 +1,27 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Bank Threat Model",
+    "owner": "Blacklight",
+    "description": "Institusi keuangan yang mengembangkan\naplikasi perbankan online baru, dengan fokus pada pemodelan ancaman dan\nkerentanannya.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "e-bank",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "e-bank STRIDE"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Cybersecurity Architect",
+    "threatTop": 0
+  }
+}
