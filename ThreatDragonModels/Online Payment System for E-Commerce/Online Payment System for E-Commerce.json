@@ -1,0 +1,16 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Online Payment System for E-Commerce",
+    "owner": "(Cybersecurity Team - E-Commerce)",
+    "description": "Sistem pembayaran online yang memungkinkan pengguna melakukan transaksi melalui berbagai metode pembayaran",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "Security Analyst Team atau CTO & DevSecOps Team",
+    "threatTop": 0
+  }
+}
