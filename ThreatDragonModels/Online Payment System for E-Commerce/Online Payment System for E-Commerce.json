@@ -391,50 +391,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Mengirim data pesanan\n & metode pembayaran",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Mengirim data pesanan\n & metode pembayaran"
-            ],
-            "id": "2bda5a55-3bbc-4efc-b4a5-2a506dede372",
-            "source": {
-              "cell": "f8a199b0-d574-4c7b-bebd-107c263bb69f",
-              "port": "8fca5f23-ba9c-43e3-bfe4-2eb921598148"
-            },
-            "target": {
-              "cell": "00a5e9f4-5c3b-4970-b435-b54f5b10bb17",
-              "port": "d72dc950-003b-49c9-86a2-b66fdf3c5d50"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "memproses pesanan",
               "description": "",
               "outOfScope": false,
@@ -533,50 +489,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Mengirim permintaan\notorisasi pembayaran",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Mengirim permintaan\notorisasi pembayaran"
-            ],
-            "id": "73de3f04-2414-4de8-8dfd-5d4d12e0db34",
-            "source": {
-              "cell": "e6836291-5879-430b-8f73-067a2a370347",
-              "port": "b77579c1-d76a-490d-ba01-ff5d364dd566"
-            },
-            "target": {
-              "cell": "75a76f1b-4c50-4f7c-9c3b-54c0f6b26c42",
-              "port": "8d14de48-204e-4134-b975-c28c5224ab92"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Mengirim \nstatus pembayaran",
               "description": "",
               "outOfScope": false,
@@ -604,56 +516,6 @@
               {
                 "x": 294,
                 "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Mengirim hasil otorisasi",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Mengirim hasil otorisasi"
-            ],
-            "id": "debceb9f-3d3f-446f-b74a-a05f1e6d61bf",
-            "source": {
-              "x": 930,
-              "y": 400
-            },
-            "target": {
-              "cell": "e6836291-5879-430b-8f73-067a2a370347",
-              "port": "b77579c1-d76a-490d-ba01-ff5d364dd566"
-            },
-            "vertices": [
-              {
-                "x": 690,
-                "y": 450
               }
             ]
           },
@@ -858,6 +720,296 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Restricted Network ",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Restricted Network "
+            ],
+            "id": "45f8299b-b1b1-4b9f-923e-76f17e60cbdb",
+            "source": {
+              "x": 970,
+              "y": -290
+            },
+            "target": {
+              "x": 930,
+              "y": 560
+            },
+            "vertices": [
+              {
+                "x": 900,
+                "y": -150
+              },
+              {
+                "x": 860,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Unrestricted Network",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Unrestricted Network"
+            ],
+            "id": "5017e803-f5b4-4e0b-a5ee-dabe846e7c27",
+            "source": {
+              "x": 230,
+              "y": -240
+            },
+            "target": {
+              "x": 220,
+              "y": 260
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": -120
+              },
+              {
+                "x": 300,
+                "y": 10
+              },
+              {
+                "x": 280,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Mengirim data pesanan\n & metode pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "35226ced-00b2-4ad2-ab7b-402380f323df",
+                  "title": "Bot Traffic atau Automated Requests ",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Penyerang dapat mengirim permintaan order dalam jumlah besar secara otomatis menggunakan bot, menyebabkan server kewalahan menangani permintaan. Ini bisa memperlambat atau bahkan",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Mengirim data pesanan\n & metode pembayaran"
+            ],
+            "id": "2bda5a55-3bbc-4efc-b4a5-2a506dede372",
+            "source": {
+              "cell": "f8a199b0-d574-4c7b-bebd-107c263bb69f",
+              "port": "8fca5f23-ba9c-43e3-bfe4-2eb921598148"
+            },
+            "target": {
+              "cell": "00a5e9f4-5c3b-4970-b435-b54f5b10bb17",
+              "port": "d72dc950-003b-49c9-86a2-b66fdf3c5d50"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": -130
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Mengirim permintaan\notorisasi pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "7c9228e1-f3f4-48f4-a36a-705fd0d837eb",
+                  "title": "Serangan Volumetrik",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": " Serangan volumetrik yang menghambat komunikasi antara Payment Gateway dan Bank",
+                  "mitigation": "- Gunakan End-to-End Encryption (E2EE) dalam komunikasi ke bank.\n- Terapkan Rate Limiting dan DDoS Protection untuk mencegah serangan volumetrik.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 2
+              }
+            },
+            "labels": [
+              "Mengirim permintaan\notorisasi pembayaran"
+            ],
+            "id": "73de3f04-2414-4de8-8dfd-5d4d12e0db34",
+            "source": {
+              "cell": "e6836291-5879-430b-8f73-067a2a370347",
+              "port": "b77579c1-d76a-490d-ba01-ff5d364dd566"
+            },
+            "target": {
+              "cell": "75a76f1b-4c50-4f7c-9c3b-54c0f6b26c42",
+              "port": "8d14de48-204e-4134-b975-c28c5224ab92"
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 310
+              },
+              {
+                "x": 780,
+                "y": 310
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Mengirim hasil otorisasi",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "96621b87-b053-49ab-82bf-a6832537026a",
+                  "title": "Kebocoran data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Jika data transaksi bocor, informasi sensitif pengguna seperti nomor kartu atau detail pembayaran bisa disalahgunakan, mengancam integritas sistem keuangan.",
+                  "mitigation": "enkripsi data (TLS/SSL), autentikasi kuat (mutual TLS), serta monitoring lalu lintas jaringan untuk mendeteksi anomali.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 3,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Mengirim hasil otorisasi"
+            ],
+            "id": "debceb9f-3d3f-446f-b74a-a05f1e6d61bf",
+            "source": {
+              "x": 930,
+              "y": 400
+            },
+            "target": {
+              "cell": "e6836291-5879-430b-8f73-067a2a370347",
+              "port": "b77579c1-d76a-490d-ba01-ff5d364dd566"
+            },
+            "vertices": [
+              {
+                "x": 690,
+                "y": 450
+              }
+            ]
+          },
+          {
             "position": {
               "x": 930,
               "y": -145
@@ -871,11 +1023,13 @@
                 "text": "E-commerce \nDatabase"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -971,13 +1125,33 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6345c1eb-e80d-4f17-a0ce-72e9cca00b64",
+                  "title": "Data Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Penyerang bisa melakukan modifikasi data transaksi, seperti mengubah jumlah pembayaran, detail pesanan, atau status pembayaran untuk keuntungan mereka sendiri.",
+                  "mitigation": "- Gunakan Prepared Statements dan Parameterized Queries untuk mencegah SQL Injection.\n- Terapkan Data Integrity Check dengan hashing atau checksum.\n- Berikan akses terbatas ke database menggunakan Role-Based Access Control (RBAC).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -1247,6 +1421,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1330,7 +1505,6 @@
               ]
             },
             "id": "d8ed72e8-eb5c-485d-98e8-8cd3e5886499",
-            "zIndex": 15,
             "data": {
               "type": "tm.Actor",
               "name": "E Commerce",
@@ -1348,6 +1522,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Security Analyst Team atau CTO & DevSecOps Team",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
