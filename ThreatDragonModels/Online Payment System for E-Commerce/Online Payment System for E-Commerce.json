@@ -816,76 +816,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Mengirim data pesanan\n & metode pembayaran",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "35226ced-00b2-4ad2-ab7b-402380f323df",
-                  "title": "Bot Traffic atau Automated Requests ",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Penyerang dapat mengirim permintaan order dalam jumlah besar secara otomatis menggunakan bot, menyebabkan server kewalahan menangani permintaan. Ini bisa memperlambat atau bahkan",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Mengirim data pesanan\n & metode pembayaran"
-            ],
-            "id": "2bda5a55-3bbc-4efc-b4a5-2a506dede372",
-            "source": {
-              "cell": "f8a199b0-d574-4c7b-bebd-107c263bb69f",
-              "port": "8fca5f23-ba9c-43e3-bfe4-2eb921598148"
-            },
-            "target": {
-              "cell": "00a5e9f4-5c3b-4970-b435-b54f5b10bb17",
-              "port": "d72dc950-003b-49c9-86a2-b66fdf3c5d50"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": -130
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Mengirim permintaan\notorisasi pembayaran",
               "description": "",
               "outOfScope": false,
@@ -1006,6 +936,76 @@
               {
                 "x": 690,
                 "y": 450
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Mengirim data pesanan\n & metode pembayaran",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "35226ced-00b2-4ad2-ab7b-402380f323df",
+                  "title": "Bot Traffic atau Automated Requests ",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Penyerang dapat mengirim permintaan order dalam jumlah besar secara otomatis menggunakan bot, menyebabkan server kewalahan menangani permintaan. Ini bisa memperlambat atau bahkan",
+                  "mitigation": "Gunakan Rate Limiting & Throttling – Batasi jumlah permintaan per pengguna atau IP dalam jangka waktu tertentu untuk mencegah spam request.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Mengirim data pesanan\n & metode pembayaran"
+            ],
+            "id": "2bda5a55-3bbc-4efc-b4a5-2a506dede372",
+            "source": {
+              "cell": "f8a199b0-d574-4c7b-bebd-107c263bb69f",
+              "port": "8fca5f23-ba9c-43e3-bfe4-2eb921598148"
+            },
+            "target": {
+              "cell": "00a5e9f4-5c3b-4970-b435-b54f5b10bb17",
+              "port": "d72dc950-003b-49c9-86a2-b66fdf3c5d50"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": -130
               }
             ]
           },
